@@ -1,0 +1,54 @@
+/* NavBar.css */
+
+.navBar{
+    position: fixed;
+    top:0;
+    width:100%;
+    height:30px;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.logo{
+    position: fixed;
+    left:20px;
+    width:80px;
+}
+
+.avatar{
+    position: fixed;
+    right:20px;
+    width:30px;
+}
+
+/* Use a media query to adjust the NavBar for smaller screens */
+@media (max-width: 600px) {
+    .logo {
+        width: 110px;
+    }
+    .avatar{
+        width:40px;
+    }
+}
+.navOptions {
+    display: flex;
+    gap: 20px;
+}
+
+.navOptions a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navOptions.left {
+    position: absolute;
+    left: 120px;
+}
+
+.navOptions.right {
+    position: absolute;
+    right: 110px;
+}

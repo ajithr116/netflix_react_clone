@@ -1,0 +1,72 @@
+/* Banner.css */
+
+.banner{
+    position: relative;
+    background-image:url('https://wallpaperaccess.com/full/2703652.png');
+    background-size: cover;
+    height: 600px;
+    color:white;
+    background-position: center; /* Add this line */
+
+}
+
+.content{
+    padding-top:140px;
+    padding-left: 150px;
+    padding-top: 250px;
+}
+
+.title{
+    font-size:3rem;
+    font-weight: 800px;
+    padding-bottom: 0.3rem;
+}
+
+.button{
+    color:white;
+    outline: none;
+    border: none;
+    font-size:700;
+    border-radius: 5px;
+    padding:0.5rem 2rem 0.5rem 2rem;
+    background-color: rgb(51,51,51,0.5);
+    cursor: pointer;
+    margin-right:1rem ;
+}
+
+.button:hover{
+    color:black;
+    background-color:#e6e6e6
+}
+
+.descrition{
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size:1.3rem;
+    max-width: 500px;
+}
+
+.fade_bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:7.4rem;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+}
+
+/* Use a media query to adjust the Banner for smaller screens */
+@media (max-width: 600px) {
+    .content {
+        padding-left: 20px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .descrition {
+        width: 90%;
+        max-width: none;
+    }
+}
