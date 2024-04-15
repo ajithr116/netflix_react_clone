@@ -15,6 +15,68 @@
 }
 
 .poster{
-    max-height:250px;
+    max-height:200px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.smallPoster{
+    max-height: 150px;
+    border-radius: 10px;
     margin-right: 10px;
 }
+
+
+.poster:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+  
+  .smallPoster:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+  
+
+.modal-content {
+    display: flex;
+  }
+  
+  .video {
+    flex: 1;
+  }
+  
+  .details {
+    flex: 1;
+  }
+
+  .poster-container {
+    position: relative;
+  }
+  
+  .poster-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .poster-container:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .movie-details {
+    display: none;
+    position: absolute;
+    z-index: 2; /* Make sure the details appear above the darkened image */
+    /* Adjust the position and style as needed */
+  }
+  
+  .poster-container:hover .movie-details {
+    display: block;
+  }
+  
